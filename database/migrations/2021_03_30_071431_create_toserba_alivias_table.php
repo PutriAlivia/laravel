@@ -14,7 +14,7 @@ class CreateToserbaAliviasTable extends Migration
     public function up()
     {
         Schema::create('toserba_alivias', function (Blueprint $table) {
-            $table->id();
+            $table->integer('id_barang');
             $table->string('kode_barang');
             $table->string('nama_barang');
             $table->string('kategori');
