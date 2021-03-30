@@ -14,6 +14,7 @@ class ToserbaAliviaSeeder extends Seeder
     public function run()
     {
         \App\Models\toserba_alivia::insert([
+        [
             'id_barang' => '0001',
             'kode_barang' => 'A001',
             'nama_barang' => 'Indomie' ,
@@ -172,6 +173,6 @@ class ToserbaAliviaSeeder extends Seeder
             'harga' => '8500',
             'jumlah' => '5000'
         ]
-    );
+        ]);
     }
 }
