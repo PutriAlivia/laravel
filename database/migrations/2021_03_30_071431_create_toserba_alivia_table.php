@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateToserbaAliviasTable extends Migration
+class CreateToserbaAliviaTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateToserbaAliviasTable extends Migration
      */
     public function up()
     {
-        Schema::create('toserba_alivias', function (Blueprint $table) {
+        Schema::create('toserba_alivia', function (Blueprint $table) {
             $table->integer('id_barang');
             $table->string('kode_barang');
             $table->string('nama_barang');
@@ -31,6 +31,6 @@ class CreateToserbaAliviasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('toserba_alivias');
+        Schema::dropIfExists('toserba_alivia');
     }
 }
