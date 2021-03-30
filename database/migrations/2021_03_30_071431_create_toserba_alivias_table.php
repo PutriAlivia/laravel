@@ -15,6 +15,11 @@ class CreateToserbaAliviasTable extends Migration
     {
         Schema::create('toserba_alivias', function (Blueprint $table) {
             $table->id();
+            $table->string('kode_barang');
+            $table->string('nama_barang');
+            $table->string('kategori');
+            $table->integer('harga');
+            $table->integer('jumlah');
             $table->timestamps();
         });
     }
